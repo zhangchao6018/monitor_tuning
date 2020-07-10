@@ -1,13 +1,18 @@
 package com.imooc.monitor_tuning.chapter2;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @RestController
 public class CpuController {
+	@RequestMapping("/hello")
+	public String test(){
+		System.gc();
+		return "hello!";
+	}
 	
 	/**
 	 * 死循环

@@ -8,6 +8,9 @@ import com.sun.btrace.annotations.OnMethod;
 import com.sun.btrace.annotations.ProbeClassName;
 import com.sun.btrace.annotations.ProbeMethodName;
 
+/**
+ * BTrace脚本,实际生产可以写到单独的BTrace项目中
+ */
 @BTrace
 public class PrintArgSimple {
 	

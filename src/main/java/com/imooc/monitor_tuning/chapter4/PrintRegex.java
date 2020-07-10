@@ -9,8 +9,8 @@ import com.sun.btrace.annotations.ProbeMethodName;
 public class PrintRegex {
 	
 	@OnMethod(
-	        clazz="com.imooc.monitor_tuning.chapter4.Ch4Controller",
-	        method="/.*/"
+	        clazz="com.imooc.monitor_tuning.chapter4.Ch4Controller",  //类名也支持正则表达式
+	        method="/.*/"  //所有方法
 	)
 	public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn) {
 		BTraceUtils.println(pcn+","+pmn);

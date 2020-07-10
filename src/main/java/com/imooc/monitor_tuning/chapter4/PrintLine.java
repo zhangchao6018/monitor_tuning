@@ -9,7 +9,12 @@ import com.sun.btrace.annotations.ProbeMethodName;
 
 @BTrace
 public class PrintLine {
-	
+	/**
+	 * line=-1  都打印出来(并不好使)
+	 * @param pcn
+	 * @param pmn
+	 * @param line
+	 */
 	@OnMethod(
 	        clazz="com.imooc.monitor_tuning.chapter4.Ch4Controller",
 	        method="exception",

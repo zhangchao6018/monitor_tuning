@@ -33,7 +33,11 @@ public class Ch4Controller {
 	public String same(@RequestParam("name")String name,@RequestParam("id")int id) {
 		return "hello,"+name+","+id;
 	}
-	
+	@RequestMapping("/same3")
+	public String same(@RequestParam("id")int id) {
+		return "hello,"+id;
+	}
+
 	@RequestMapping("/exception")
 	public String exception() {
 		try {

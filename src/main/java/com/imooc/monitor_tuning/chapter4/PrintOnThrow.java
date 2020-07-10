@@ -33,6 +33,9 @@ import com.sun.btrace.annotations.OnMethod;
 import com.sun.btrace.annotations.Self;
 import com.sun.btrace.annotations.TLS;
 
+/**
+ * 捕捉抛出的异常,适用于生产环境中,缺乏日志,或者try-catch 异常未处理的场景
+ */
 @BTrace 
 public class PrintOnThrow {    
     // store current exception in a thread local

@@ -12,8 +12,11 @@ public class PrintSame {
 	        clazz="com.imooc.monitor_tuning.chapter4.Ch4Controller",
 	        method="same"
 	)
-	public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, String name) {
-		BTraceUtils.println(pcn+","+pmn + "," + name);
+	/**
+	 * 方法重载根据参数列表匹配对应方法  这里匹配的是same3
+	 */
+	public static void anyRead(@ProbeClassName String pcn, @ProbeMethodName String pmn, int id) {
+		BTraceUtils.println(pcn+","+pmn + "," + id);
 		BTraceUtils.println();
     }
 }
